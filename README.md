@@ -1,2 +1,3 @@
 # protobuf_sofa_rpc_java_client
-http post by protobuf in sofa_rpc description
+使用了sofa_rpc 文档中描述的一种直接采用post请求搭配protobuf的方式，在请求过程中并没有使用json。
+本例是一个java客户端的例子
