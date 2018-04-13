@@ -24,12 +24,14 @@ public class ClientDemo {
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Accept","application/protobuf");
-            connection.setRequestProperty("User-agent","Mozilla/5.0");
-            connection.setRequestProperty("Connection", "Keep-Alive");
-            connection.setRequestProperty("Cache-Control","no-cache");
-            connection.setRequestProperty("Accept-Encoding","gzip, deflate");
-            connection.setRequestProperty("Content-Type","charset=UTF-8");
-            connection.setRequestProperty("Accept-Language","zh-cn");
+
+            //not necessary below
+//            connection.setRequestProperty("User-agent","Mozilla/5.0");
+//            connection.setRequestProperty("Connection", "Keep-Alive");
+//            connection.setRequestProperty("Cache-Control","no-cache");
+//            connection.setRequestProperty("Accept-Encoding","gzip, deflate");
+//            connection.setRequestProperty("Content-Type","charset=UTF-8");
+//            connection.setRequestProperty("Accept-Language","zh-cn");
 
             connection.setDoInput(true);
             connection.setDoOutput(true);
